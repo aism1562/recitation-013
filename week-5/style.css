@@ -1,0 +1,67 @@
+#toc_container {
+    background-color: #E1E1E1;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
+}
+
+#google_search_container {
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+}
+
+#search_results_info {
+    margin-left: 150px;
+    font-family: 'Arial';
+}
+
+#search_result_numbers {
+    color: #9aa0a6;
+}
+
+.search_results {
+  margin-left: 8px;
+}
+.search_results h2 {
+  font-size: 19px;
+  color: #1A0DAB;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.search_results p {
+  font-size: 13px;
+  margin-top: 0;
+  color: #525252;
+}
+
+#sub_search_results {
+  margin-left: 100px;
+  font-family: 'Arial';
+}
+#sub_search_results_2 {
+  margin-left: 420px;
+  font-family: 'Arial';
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.grid_item {
+  font-size: 30px;
+  text-align: center;
+}

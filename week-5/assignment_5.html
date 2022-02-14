@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <h1 style="text-align:center">Assignment 5</h1>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<div id="toc_container">
+  <p class="toc_title">Contents</p>
+  <ul class="toc_list">
+    <li><a href="#chess_Board">Chessboard</a></li>
+    <li><a href="#survey_Form">Survey Form</a></li>
+    <li><a href="#google_Search_Page">Google Search Page</a></li>
+    <li><a href="#accessibility_Statement">Accessibility Statement</a></li>
+    <li><a href="#assignment_One_Revisions">Assignment 1 Revisions</a></li>
+  </ul>
+</div>
+<div align="center">
+  <h2 id="chess_Board"; style="color:#758109">Challenge 2: A Chessboard</h2>
+   <style type="text/css">
+   .tg  {border-collapse:collapse;border-spacing:0;}
+   .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+     overflow:hidden;padding:20px 20px;word-break:normal;}
+   .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+     font-weight:normal;overflow:hidden;padding:20px 20px;word-break:normal;}
+   .tg .tg-r3ob{background-color:#f7b49b;border-color:inherit;color:#ba3460;text-align:left;vertical-align:top}
+   .tg .tg-kb5n{background-color:#F7B49B;border-color:inherit;color:#ba3460;text-align:left;vertical-align:top}
+   .tg .tg-ifc6{background-color:#F7E4BB;border-color:inherit;color:#ba3460;text-align:right;vertical-align:top}
+   .tg .tg-46kx{background-color:#F7E4BB;border-color:inherit;color:#ba3460;text-align:left;vertical-align:top}
+   .tg .tg-u3rl{background-color:#f7e4bb;border-color:inherit;color:#ba3460;text-align:left;vertical-align:top}
+   </style>
+   <table class="tg">
+   <thead>
+     <tr>
+       <th class="tg-ifc6">&#9820;</th>
+       <th class="tg-kb5n">&#9822;</th>
+       <th class="tg-46kx">&#9821;</th>
+       <th class="tg-kb5n">&#9819;</th>
+       <th class="tg-46kx">&#9818;</th>
+       <th class="tg-kb5n">&#9821;</th>
+       <th class="tg-46kx">&#9822;</th>
+       <th class="tg-kb5n">&#9820;</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <td class="tg-kb5n">&#9823;</td>
+       <td class="tg-46kx">&#9823;</td>
+       <td class="tg-kb5n">&#9823;</td>
+       <td class="tg-46kx">&#9823;</td>
+       <td class="tg-kb5n"></td>
+       <td class="tg-46kx">&#9823;</td>
+       <td class="tg-kb5n">&#9823;</td>
+       <td class="tg-46kx">&#9823;</td>
+     </tr>
+     <tr>
+       <td class="tg-46kx"><p></p></td>
+       <td class="tg-kb5n"><p></p></td>
+       <td class="tg-46kx"><p></p></td>
+       <td class="tg-kb5n"><p></p></td>
+       <td class="tg-46kx"><p></p></td>
+       <td class="tg-kb5n"><p></p></td>
+       <td class="tg-46kx"><p></p></td>
+       <td class="tg-kb5n"><p></p></td>
+     </tr>
+     <tr>
+       <td class="tg-kb5n"></td>
+       <td class="tg-46kx"></td>
+       <td class="tg-kb5n"></td>
+       <td class="tg-46kx"></td>
+       <td class="tg-kb5n">&#9823;</td>
+       <td class="tg-46kx"></td>
+       <td class="tg-kb5n"></td>
+       <td class="tg-46kx"></td>
+     </tr>
+     <tr>
+       <td class="tg-46kx"></td>
+       <td class="tg-kb5n"></td>
+       <td class="tg-46kx"></td>
+       <td class="tg-kb5n"></td>
+       <td class="tg-46kx">&#9817;</td>
+       <td class="tg-kb5n"></td>
+       <td class="tg-46kx"></td>
+       <td class="tg-kb5n"></td>
+     </tr>
+     <tr>
+       <td class="tg-kb5n"><p></p></td>
+       <td class="tg-46kx"><p></p></td>
+       <td class="tg-kb5n"><p></p></td>
+       <td class="tg-46kx"><p></p></td>
+       <td class="tg-kb5n"><p></p></td>
+       <td class="tg-46kx"><p></p></td>
+       <td class="tg-kb5n"><p></p></td>
+       <td class="tg-46kx"><p></p></td>
+     </tr>
+     <tr>
+       <td class="tg-u3rl">&#9817;</td>
+       <td class="tg-r3ob">&#9817;</td>
+       <td class="tg-u3rl">&#9817;</td>
+       <td class="tg-r3ob">&#9817;</td>
+       <td class="tg-u3rl"></td>
+       <td class="tg-r3ob">&#9817;</td>
+       <td class="tg-u3rl">&#9817;</td>
+       <td class="tg-r3ob">&#9817;</td>
+     </tr>
+     <tr>
+       <td class="tg-r3ob">&#9814;</td>
+       <td class="tg-u3rl">&#9816;</td>
+       <td class="tg-r3ob">&#9815;</td>
+       <td class="tg-u3rl">&#9813;</td>
+       <td class="tg-r3ob">&#9812;</td>
+       <td class="tg-u3rl">&#9815;</td>
+       <td class="tg-r3ob">&#9816;</td>
+       <td class="tg-u3rl">&#9814;</td>
+     </tr>
+   </tbody>
+   </table>
+</div>
+<br></br>
+<div align="center">
+  <h2 id="survey_Form"; style="text-align:center">Challenge 3: A Survey Form<h2>
+        <title>Personal Survey</title>
+        <form action="http://google.co.in">
+        <h1 style="color:#E44B2B;">Personal Survey Form</h1>
+        Enter your name:
+        <input type="text" name="UserName" size=35 maxlength=35 value="">
+        <br></br>
+        Enter your current mood:
+        <input type="text" name="Mood" size=35 maxlength=35 value="">
+        <br></br>
+        What do you do for self-care?
+        <p>
+        <input type="checkbox" name="Exc">Exercise
+        <input type="checkbox" name="Val">Meditation
+        <input type="checkbox" name="Ski">Skincare
+        <input type="checkbox" name="Not">Nothing
+        </p>
+        What's your favorite color?
+        <p>
+        <input type="radio" name="exe" value=1>Red
+        <input type="radio" name="exe" value=2>Orange
+        <input type="radio" name="exe" value=3>Yellow
+        <input type="radio" name="exe" value=4>Green
+        <input type="radio" name="exe" value=5>Blue
+        <input type="radio" name="exe" value=6>Purple
+        <input type="radio" name="exe" value=7>Pink
+        </p>
+        What genre of movies do you like?
+        <select name="moviepref" ><option>
+        <option value=1 selected = "true">comedy
+        <option value=2 >romance
+        <option calue=3 >thriller
+        <option value=4 >horror
+        <option value=5 >biopic
+        </select>
+        <br></br>
+        Anything else?:
+        <textarea name="Comments" cols=30 rows=4></textarea
+        <br></br>
+        <br></br>
+        <input type=submit value="Submit Form">
+<br></br>
+<bdo dir="ltr">
+For my original rendition of this challenge the syntax was off. I was missing a few < div > tags and as such it was affecting the challenges underneath it.
+I also had to change the position of the file because it was in the wrong order according to the assignment description. This is also where I used a new
+tag, < bdo > to separate the text alignment from the form's syntax.
+</bdo>
+</div>
+<div id="google_search_container">
+  <h2 id="google_Search_Page"; style="text-align:center">Challenge 4: A Google Search Page</h2>
+  <div id="search_results_info">
+  <p id="search_result_numbers">About 2,040,000,000 results (0.45 seconds)</p>
+  <p>https://www.colorado.edu › atlas</p>
+  <div class="search_results">
+    <h2>ATLAS Institute | University of Colorado Boulder</h2>
+    <p>ATLAS is an interdisciplinary institute for radical creativity and invention. We transform</p>
+    <p>ingenious ideas into reality through research, ...</p>
+  </div>
+  <div class="grid_container">
+  <div class="grid_item"><div id="sub_search_results"; class="search_results">
+    <h2>Graduate Degrees in Creative ...</h2>
+    <p>Radically interdisciplinary, ATLAS</p>
+    <p>graduate programs nurture ...</p>
+  </div></div>
+  <div class="grid_item"><div id="sub_search_results"; class="search_results">
+    <h2>About</h2>
+    <p>ATLAS is an interdisciplinary</p>
+    <p>institute for radical creativity and ...</p>
+  </div></div>
+  <div class="grid_item"><div id="sub_search_results"; class="search_results">
+        <h2>Academics</h2>
+        <p>Graduated through the College of</p>
+        <p>Engineering and Applied ...</p>
+      </div></div>
+  <div class="grid_item"><div id="sub_search_results"; class="search_results">
+        <h2>Undergraduate</h2>
+        <p>Awarded through the College of</p>
+        <p>Engineering and Applied ...</p>
+      </div></div>
+  <div class="grid_item"><div id="sub_search_results"; class="search_results">
+        <h2>Faculty</h2>
+        <p>Lecturer, co-chair Board of</p>
+        <p>Advisors • DESIGN, AR/VR  ...</p>
+      </div></div>
+  <div class="grid_item"><div id="sub_search_results"; class="search_results">
+        <h2>Research + Creative</h2>
+        <p>Check out ATLAS Research</p>
+        <p>Showcase  2020.</p>
+      </div></div>
+</div>
+  <p>https://www.colorado.edu › school › atlas-cu-boulder</p>
+  <div class="search_results">
+    <h2>ATLAS Institute | Innocation & Entreprenuership - University of ...</h2>
+    <p>Resource that sponsors diverse interdisciplinary academic and research programs, challenging</p>
+    <p>community members to explore, innovate, create and design well ...</p>
+  </div>
+  <p>https://www.linkedin.com › school › atlas-cu-boulder</p>
+  <div class="search_results">
+    <h2>ATLAS Institute at CU Boulder Employees, Location, Alumni</h2>
+    <p>ATLAS is an interdisciplinary institute for radical creativity and invention where ingenious ideas</p>
+    <p>become reality. · ATLAS Institute at CU Boulder. View all open ...</p>
+  </div>
+  <p>https://typemoon.fandom.com › wiki › Atlas</p>
+  <div class="search_results">
+    <h2>Atlas | TYPE-MOON Wiki | Fandom</h2>
+    <p>It is an institute focused on the study and development of alchemy, but its members broke off</p>
+    <p>from the mainstream modern practice of alchemy that originated in ...</p>
+  </div>
+  <p>https://www.internationalaffairshouse.org</p>
+  <div class="search_results">
+    <h2>Atlas Institute for International Affairs: Home</h2>
+    <p>Atlas Institute for International Affairs - The Harmony of Opposite Tensions.</p>
+  </div>
+</div>
+<div>
+  <h2 id="accessibility_Statement"; style="text-align:center">Challenge 5: Accesibility Statement</h2>
+<p>When it came to creating the form I found that what I had written wasn’t very accessible to those who would have to use text-to-speech readers or similar needs. It’s basic in how it’s written with little use of alt/messages within the code and the setup. I also feel as though I do not have enough knowledge on choosing colors and imagery to be more accessible too many different ranges of people’s vision as my designs may be hard to view with some vision impairments. To rectify this I would first conduct a lot of research but then get subjects to review my site and products and give feedback for whatever I may be missing or could improve upon.</p>
+<br></br>
+<p>For this last part of the assignment, originally it was missing from the submitted file. I later discovered this was due to me not pushing the origin on Github.</p>
+</div>
+<br></br>
+<div>
+  <h3 id="assignment_One_Revisions"; style="text-align:center">Assignment 1 Revisions</h3>
+<p> Challenge 1 is not on this file like the others are so I will put my revisions here. For Challenge 1 had some links that did not work and I failed to link Assignment 4 to it. I went back and fixed this and removed any placeholder links.</p>
+</div>
+</body>
+</html>
