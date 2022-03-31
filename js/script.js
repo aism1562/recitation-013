@@ -6,59 +6,23 @@
 //   const name = prompt('Enter a new name');
 //   para.textContent = `Player 1: ${name}`;
 // }
-//
 
-// let  myVariable;
-// myVariable = 'Foo';
-//
-// let myVariable2 = 'Fon';
-//
-// myVariable = 'Celine';
+let myButton = document.querySelector('button');
+let myHeading = document.querySelector('h1');
 
-/*This is a
-multi-line comment */
+function setUserName() {
+  let myName = prompt('Please enter your name.');
+  localStorage.setItem('name', nyName);
+  myHeading.textContent = "Mozilla is cool, " + myName;
+}
 
-//this is a comment
+if(!localStorage.getItem('name')) {
+  setuserName();
+} else; {
+  let storedName = localStorage.getItem('name');
+  myHeading.textContent = 'Mozilla is cool,' + storedName:
+}
 
-// VARIABLES
-/*
-let myVariable = 'bob'; // STRINGS
-
-let myNumber = 3; // NUMBERS
-
-let myBoolean = true; // BOOLEANS
-let myBoolean = false;
-
-let myArray = [1, 'bob', true]; // ARRAYS
-
-let myObject = document.querySelector('p');
-// OBJECTS, BUT ALL THE ABOVE ARE OBJECTS TOO
-
-// OPERATORS
-
-6 + 9; // ADDITION
-'Hello' + 'World'; // STRING ADDITION --> 'HelloWorld'
-
-// SUBTRACTION --> -
-// MULTIPLICATION --> *
-// DIVISION --> /
-
-// ASSIGNMENT --> =
-
-// EQUALITY
-myNumber === 4; // <-- This will result in false
-
-// NOT, DOES-NOT-EQUAL
-!(myNumber === 3); // !(TRUE) = FALSE;
-myVariable !== 3; // FALSE
-
-*/
-
-// CONDITIONALS
-
-let iceCream= 'chocolate';
-if(iceCream === 'chocolate') {
-  alert('Yay, I love chocolate ice cream!');
-} else {
-  alert('die');
+myButton.onclick = function() {
+  setUserName();
 }
