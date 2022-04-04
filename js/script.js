@@ -1,28 +1,19 @@
-// const para = document.querySelector('p');
-//
-// para.addEventListener('click', updateName);
-//
-// function updateName () {
-//   const name = prompt('Enter a new name');
-//   para.textContent = `Player 1: ${name}`;
-// }
+const dioBtn = document.querySelector('button')
 
-let myButton = document.querySelector('button');
-let myHeading = document.querySelector('h1');
-
-function setUserName() {
-  let myName = prompt('Please enter your name.');
-  localStorage.setItem('name', nyName);
-  myHeading.textContent = "Mozilla is cool, " + myName;
+dioBtn.addEventListener('click', response);
+function response () {
+  let response = prompt('Do you know how to fix it?');
+  if(response === 'yes','Yes'){
+    alert('Then turn off the lights already!');
+    }
+  else{
+    alert("Turn off the lights.");
+  }
 }
 
-if(!localStorage.getItem('name')) {
-  setuserName();
-} else; {
-  let storedName = localStorage.getItem('name');
-  myHeading.textContent = 'Mozilla is cool,' + storedName:
-}
+const blackBtn = document.querySelector('.black');
 
-myButton.onclick = function() {
-  setUserName();
-}
+blackBtn.addEventListener('click',()=>{
+   const body =  document.body;
+   body.style.background = 'black';
+});
