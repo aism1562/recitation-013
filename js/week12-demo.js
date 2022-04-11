@@ -1,7 +1,3 @@
-// document.querySelector('button');
-// document.querySelector('.new-quote button');
-// const quoteButton document.querySelector('#js-new-quote'); casing is hard to read
-
 async function getQuote() {
   console.log("quote button was clicked");
   try {
@@ -12,13 +8,26 @@ async function getQuote() {
 
     const json = await response.json();
     console.log(json);
+    displayQuote(json.activity);
   } catch(err) {
     console.log(err)
     alert('Failed');
   }
 }
 
-const endpoint = 'http://quotes.stormconsultancy.co.uk/random.json'
+function displayQuote(quote) {
+  const quoteText = document.querySelector('#js-quote-text');
+  quoteText.textContent = quote;
+}
+
+const endpoint = 'https://www.boredapi.com/api/activity'
 
 const quoteButton = document.querySelector('#js-new-quote');
 quoteButton.addEventListener('click', getQuote);
+
+function setBg(color) {
+  const randomColor = Math.floor(Math.random()*16777215).toString(16);
+  document.body.style.backgroundColor = "#" + randomColor;
+}
+genNew.addEventListener("click", setBg);
+setBg();
