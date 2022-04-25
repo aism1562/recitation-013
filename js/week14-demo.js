@@ -18,18 +18,16 @@ console.log(myCar.make);
 
 console.log(mySecondCar.make);
 
-////
+// function to add a new superhero
 
 let superHeroes = {
-  "squadName": "Super Hero Squad",
+  "squadName": "Super hero squad",
   "homeTown": "Metro City",
   "formed": 2016,
   "secretBase": "Super tower",
   "active": true,
   "members": [
     {
-      ///this is an array [object, object, object]
-      // superHeroes['members'][0];
       "name": "Molecule Man",
       "age": 29,
       "secretIdentity": "Dan Jukes",
@@ -64,38 +62,43 @@ let superHeroes = {
   ]
 }
 
-// function to add a new superhero
+// Function to add a new superhero -- it's built to be changeable (see the function call below)
 
-function addHero(obj) {
-  const heroName = "Batman";
-  const years = "45";
-  const secretID = "Bruce Wayne";
-  const abilities = ['technology', 'money', 'armor'];
+function addHero(obj, heroName, heroAge, heroIdentity, heroPowers) {
+  let hero = {
+    "name": heroName,
+    "age": heroAge,
+    "secretIdentity": heroIdentity,
+    "powers": heroPowers
+  };
 
-  let memb = obj['members'];
-  console.log(memb);
-  console.log(obj);
+  obj['members'].push(hero); // the push() method adds a value to an object/array.
 
-  memb = [heroName, years, secretID, abilities];
-  console.log(memb);
 }
 
-addHero(superHeroes);
+addHero(superHeroes, "The Batman", 45, "Bruce Wayne", ["money", "technology", "Alfred"]);
 
-// function
+// Function to populate header... try to add the location of the secret base!
 
-function populateHeader(x) {
+function populateHeader(obj) {
   const header = document.querySelector('header');
   const myH1 = document.createElement('h1');
 
-  myH1.textContent = x['squadName'];
+  myH1.textContent = obj['squadName'];
+  console.log(myH1);
   header.appendChild(myH1);
 
   const myPara = document.createElement('p');
-  myPara.textContent = `Hometown: ${x['homeTown']}` // Formed `${x['formed']}`;
+  // We use the `` (top left of keyboard) to indicate strings.
+  // You could also concatenate using + signs
+  // Like 'Hometown: ' + obj['homeTown'] + '// Formed: ' + obj['formed']
+  myPara.textContent = `Hometown: ${obj['homeTown']} // Formed: ${obj['formed']}`;
 
   header.appendChild(myPara);
 }
+
+// Function to populate heroes cards; will run for however many heros are in the "members" array of our JSON.
+
 function populateHeroes(obj) {
   const section = document.querySelector('section');
   const heroes = obj['members'];
