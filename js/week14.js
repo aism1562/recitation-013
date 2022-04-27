@@ -50,6 +50,7 @@ function addEmployee(obj, name, jobDepart, jobPosit, earnings, raise, wfh) {
 
 addEmployee(techCompany, "Anna", "Tech", "Executive", 25600, false, true);
 
+
 // problem 3
 
 function populateEmployees(obj) {
