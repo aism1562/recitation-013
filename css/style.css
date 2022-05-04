@@ -1,3 +1,13 @@
+/* .fullscreen {
+  width: 100vw;
+  height: 100vh;
+  background-size: auto;
+  background-size: 105rem;
+  background-image: url(img/grid.png);
+  background-color: #D5F2E2;
+}
+ */
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -10,12 +20,10 @@
 .bar {
   grid-area: bar;
   background: #F34119;
-  opacity: 0.9;
-  width: 960px;
+  width: 1080px;
   margin: auto;
   padding: 7px;
   border: 3px solid #251F1F;
-  box-shadow: -7px 0px grey;
 }
 
 .screen {
@@ -25,19 +33,22 @@
   gap: 0px 0px;
   grid-template-areas: "sidebar content content""sidebar content content""sidebar content content";
   grid-area: screen;
-  width: 980px;
+  width: 1100px;
+  height: 620px;
   margin: 0px auto;
-  box-shadow: -7px 5px grey;
+  box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
 }
 
 .logo {
   grid-area: logo;
   text-align: center;
   background-color: #FAF4E6;
+  border: 2px solid #251F1F;
 }
 
 #shrimp {
   max-width: 70%;
+  /* border: 2px solid #251F1F; */
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -57,6 +68,7 @@
   width: 55%;
   margin: 22px auto;
   text-align: center;
+  border: 2px solid #251F1F;
 }
 
 .btn:hover {
@@ -73,6 +85,11 @@
   background-color: #E7836D;
 }
 
+.content-hold {
+  ----
+
+}
+
 .group_circle {
   display: inline-block;
   width: 14px;
@@ -80,6 +97,7 @@
   background: #f9f9f9;
   border-radius: 50%;
   margin: 0 4px 0 0;
+  border: 2px solid #251F1F;
 }
 
 .red {
@@ -117,11 +135,13 @@ body {
     width: 300px;
     grid-template-rows: 1fr;
     grid-template-areas: "sidebar content";
+    border: none;
   }
 
   .content {
     grid-area: content;
     width: 200px;
+    border: none;
   }
 
   .button_group {
@@ -150,4 +170,42 @@ button {
 
 .aligncenter {
   text-align: center;
+}
+
+.tab {
+  overflow: hidden;
+  /* border: 1px solid #ccc; */
+  background-color: #FAF4E6;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: #FAF4E6;
+  display: block;
+  float: left;
+  border: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 12px;
+  font-style: monospace, sanserif;
+  text-decoration: none;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
 }

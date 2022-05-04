@@ -3,10 +3,11 @@
 
 <head>
   <link rel="stylesheet" href="../css/style.css">
+  <script defer src="../js/script.js" charset="utf-8"></script>
   <meta charset="UTF-8">
   <title>Projects</title>
 </head>
-<body style="background-color: #D5F2E2;">
+<body style="background-color: #D5F2E2; background-image: url(../img/grid.png);">
   <div class="container">
     <div class="bar">
       <div class="group_circle red"></div>
@@ -20,15 +21,27 @@
       </div>
         <div class="button_group">
           <a href="/index.html" class="btn">Home</a>
-          <a href="preweek5gal.html" class="btn">Pre-Week 5</a>
-          <a href="week5gal.html" class="btn">Week 5</a>
-          <a href="./jswork.html" class="btn">Javascript</a>
+          <a href="about.html" class="btn" >About</a>
+          <a href="projects.html" class="btn">Projects</a>
           <a href="contact.html" class="btn">Contact</a>
         </div>
       </div>
-      <div class="content"></div>
+      <div class="content">
+        <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'bio')">About Me</button>
+        <button class="tablinks" onclick="openCity(event, 'Chessboard')">Chessboard</button>
+        <button class="tablinks" onclick="openCity(event, 'assignment-5')">Mixed Bag</button>
+        <button class="tablinks" onclick="openCity(event, 'assignment-4')">Survey</button>
+        <button class="tablinks" onclick="openCity(event, 'wonderBrd')">Encyclopedia</button>
+        <button class="tablinks" onclick="openCity(event, 'generator')">Generator</button>
+        <button class="tablinks" onclick="openCity(event, 'silly-generator')">Story Generator</button>
+
+
+        </div>
+        <!-- iFrame here -->
+        <iframe width=849 height=570 id="foo" src=""></iframe>
+      </div>
     </div>
   </div>
 </body>
-
 </html>
